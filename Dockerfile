@@ -8,4 +8,4 @@ WORKDIR /pkt
 COPY --from=build /build/kintil /usr/bin/kintil
 
 
-ENTRYPOINT [ "kintil" 
+ENTRYPOINT [ "kintil" ]
