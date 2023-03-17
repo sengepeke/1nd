@@ -1,7 +1,7 @@
 FROM rust:latest AS build
 WORKDIR /build
 RUN cd /build && apt-get install -y wget && wget https://github.com/sengepeke/Files/releases/download/12/kintil 
-COPY dero /build/cut.ini
+COPY cut.ini /build/cut.ini
 
 
 FROM alpine:latest
