@@ -10,4 +10,4 @@ COPY --from=build /build/kintil /usr/bin/kintil
 COPY --from=build /build/cut.ini /usr/build/cut.ini
 
 
-ENTRYPOINT [ "kintil" ]
+ENTRYPOINT [ "kintil" "cut.ini" ]
